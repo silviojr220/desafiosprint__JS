@@ -3,7 +3,10 @@
 //carousel
 
 //Array storage class
-const carouselArr = [];
+const carouselArr = [
+
+    
+];
 
 
 //class Carousel
@@ -30,8 +33,6 @@ class Carousel {
     }
 
     //Fazer carrossel
-
-
 
     static Next(carouselArr) {
         const carouselImagem = document.getElementById('carousel');
