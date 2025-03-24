@@ -1,12 +1,5 @@
-
-
-//carousel
-
 //Array storage class
-const carouselArr = [
-
-    
-];
+const carouselArr = [];
 
 
 //class Carousel
@@ -32,20 +25,37 @@ class Carousel {
         }
     }
 
-    //Fazer carrossel
 
-    static Next(carouselArr) {
-        const carouselImagem = document.getElementById('carousel');
-        const carouselTitle = document.getElementById('carousel-title');
+    static Next() {
 
-        if (carouselImagem && carouselTitle) {
-            const carouselSlide = carouselArr[Carousel._sequence];
 
-            carouselImagem.style.backgroundImage(`url:img/${carouselSlide.Imagem}`)
-            carouselImagem.style.backgroundSize('cover');
-            carouselDiv.innerHTML = '';
-
-            Carousel._sequence = (Carousel._sequence + 1) % Carousel._size;
-        }
     }
+    
+
+
 };
+
+
+//Classe, tem com função da propriedades a variavel que está sendo atribuida.
+//Para acessar uma propriedade dentro de uma classe, se utiliza "variavel.propiedade = atribuição".
+//"This" (Esse), serve para especificar o atributo de uma propriedade, ou seja "This.propiedade".
+//Com a variavel criada, "new + Classe", faz com que as propriedades da classe, sejam atribuidas a variavel.
+
+
+
+//Estrutura
+
+class {
+    propriedade;
+
+    mudar () {
+        this.propriedade = algo;
+    }
+}
+
+variavel = new classe;
+
+variavel.propriedade = A;
+
+variavel.mudar(B);
+
