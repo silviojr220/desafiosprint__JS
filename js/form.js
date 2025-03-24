@@ -25,8 +25,6 @@ function Post(form) {
 
 function Enviar(data) {
 
-
-    
     if (data.nome != "") {
         alert('Obrigado sr(a) ' + data.nome + ' os seus dados foram encaminhados com sucesso');
     }
