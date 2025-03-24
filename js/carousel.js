@@ -1,7 +1,6 @@
 //Array storage class
 const carouselArr = [];
 
-
 //class Carousel
 class Carousel {
     constructor(Imagem, Title, URL) {
@@ -16,8 +15,8 @@ class Carousel {
             if (arr.length > 0) {
                 Carousel._sequence = 0;
                 Carousel._size = arr.length;
-                Carousel.Next(); //start
-                Carousel._interval = setInterval(function () { Carousel.Next(); }, 5000);
+                Carousel.Next(arr); //start
+                Carousel._interval = setInterval(function () { Carousel.Next(); }, 2000);
             }
 
         } else {
@@ -27,13 +26,24 @@ class Carousel {
 
 
     static Next() {
+        const carouselConteudo = document.getElementById('carousel');
+        const url = document.getElementById('carousel-title');
 
 
-    }
-    
+        if (carouselConteudo && url) {
+            const carouselSlide = carouselArr[Carousel._sequence];
 
+            carouselConteudo.style.backgroundImage = `url('img/${carouselSlide.imagem}')`;
+            carouselConteudo.style.backgroundImage = `cover`;
+            carouselConteudo.innerHTML = '';
 
-};
+            url.innerHTML = `<a href="${carouselSlide.url}">${carouselSlide.title}</a>`;
+
+            Carousel._sequence = (Carousel._sequence + 1) % Carousel._size;
+        }
+
+    };
+}
 
 
 //Classe, tem com função da propriedades a variavel que está sendo atribuida.
@@ -43,19 +53,19 @@ class Carousel {
 
 
 
-//Estrutura
+// Estrutura
 
-class {
-    propriedade;
+// class {
+//     propriedade;
 
-    mudar () {
-        this.propriedade = algo;
-    }
-}
+//     mudar () {
+//         this.propriedade = algo;
+//     }
+// }
 
-variavel = new classe;
+// variavel = new classe;
 
-variavel.propriedade = A;
+// variavel.propriedade = A;
 
-variavel.mudar(B);
+// variavel.mudar(B);
 
