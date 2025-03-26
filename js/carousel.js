@@ -34,7 +34,7 @@ class Carousel {
             const carouselSlide = carouselArr[Carousel._sequence];
 
             carouselConteudo.style.backgroundImage = `url('img/${carouselSlide.imagem}')`;
-            carouselConteudo.style.backgroundImage = `cover`;
+            carouselConteudo.style.backgroundImage = 'cover';
             carouselConteudo.innerHTML = '';
 
             url.innerHTML = `<a href="${carouselSlide.url}">${carouselSlide.title}</a>`;
