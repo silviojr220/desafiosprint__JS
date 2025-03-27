@@ -17,14 +17,14 @@ div#carousel {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 div#carousel-title a {
     text-decoration: none;
 }
 
-div#carousel-title  {
+div#carousel-title {
     display: block;
     text-align: center;
     margin-top: 10px;
@@ -37,10 +37,11 @@ header ul {
     margin-left: auto;
     margin-right: auto;
     display: block;
+    width: 100%;
 }
 
 ul {
-	display: inline-block;
+    display: inline-block;
 }
 
 header {
@@ -48,17 +49,23 @@ header {
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
     padding: 10px;
+    border: solid 2px red;
 }
 
 header div {
     display: inline;
     vertical-align: middle;
+    height: 60vh;
+    border: solid 2px red;
+
 }
 
 header nav {
     display: inline-block;
     vertical-align: middle;
     width: 80vw;
+    border: solid 2px red;
+
 }
 
 header nav a {
@@ -68,6 +75,8 @@ header nav a {
     font-weight: 900;
     margin-left: 14px;
     margin-right: 14px;
+    border: solid 2px red;
+
 }
 
 header nav a:hover {
@@ -114,9 +123,45 @@ footer div {
 button:hover {
     background: #1b357e;
 }
+
 button {
     background: #1351d8;
     color: #fff;
     border: 0px;
     border-radius: 10px;
+}
+
+/* ---Responsividade--- */
+
+@media screen and (max-width: 1070px) {
+    div#carousel {
+        width: 70vw;
+        height: 60vh;
+        padding: 15px;
+    }
+}
+
+@media screen and (min-width: 850px) and (max-width: 900px) {
+    div#carousel {
+        width: 100vh;
+        margin-left: 15%;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div#carousel {
+        width: 90vh;
+        margin-left: 15%;
+        height: 40vh;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+    div#carousel {
+        width: 80vw;
+        margin-left: 5%;
+        height: 20vh;
+
+    }
 }
