@@ -90,10 +90,12 @@ div#compare {
     div#compare {
         width: 40vw;
         height: 90vh;
+        left: 25vw;
     }
 }
 @media screen and (min-width: 320px) and (max-width: 480px) {
     div#compare {
         width: 0vw;
+        left: 1px;
     }
 }

@@ -111,6 +111,11 @@ nav#social ul img {
     width: 28px;
 }
 
+nav#social img:hover {
+    opacity: 0.5;
+	transform: scale(0.9);
+}
+
 span.redesociais {
     color: #ffffff;
     vertical-align: super;
