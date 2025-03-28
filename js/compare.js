@@ -62,7 +62,7 @@ function HideCompare() {
 
 function UpdateCompareTable() {
     carArr.slice(0, 2).map((car, i) => {
-        document.getElementById(`compare_image_${i}`).innerHTML = (`<img src="${car.image}"width='200'>`);
+        document.getElementById(`compare_image_${i}`).innerHTML = (`<img src="${car.image}"width='100'>`);
         document.getElementById(`compare_modelo_${i}`).textContent = car.nome;
         document.getElementById(`compare_alturacacamba_${i}`).textContent = car.alturaCacamba;
         document.getElementById(`compare_alturaveiculo_${i}`).textContent = car.alturaVeiculo;
