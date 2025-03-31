@@ -157,7 +157,7 @@ button:hover {
 @media screen and (max-width: 1070px) {
     div#carousel {
         width: 80vw;
-        height: 0vh;
+        height: 40vh;
         padding: 15px;
     }
 }

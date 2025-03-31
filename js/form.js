@@ -1,5 +1,7 @@
 
 //class contato
+
+//construtor: é um método especial para criar e inicializar um objeto criado a partir de uma classe.
 class contato {
     constructor(nome, sobrenome, email, telefone, contato) {
         this.nome = nome;
