@@ -27,6 +27,8 @@ function GetCarArrPosition(arr, carClass) {
     return -1;
 }
 
+
+//instanceof: utilizado para verificar se um objeto é uma instância de uma classe ou função construtora específica.
 function SetCarToCompare(el, carClass) {
     if (!(carClass instanceof Car)) {
         throw new Error("Você precisa passar um objeto da classe Car.");
@@ -60,6 +62,8 @@ function HideCompare() {
     document.getElementById("compare").style.display = "none";
 }
 
+
+//slice : O método slice() em JavaScript é utilizado para criar uma cópia superficial de uma parte de um array (ou string), sem modificar o array original. Ele retorna um novo array contendo os elementos selecionados.
 function UpdateCompareTable() {
     carArr.slice(0, 2).map((car, i) => {
         document.getElementById(`compare_image_${i}`).innerHTML = (`<img src="${car.image}"width='100'>`);
